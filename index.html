@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle">
+                <img src="./images/menu.png" alt="">
+            </div>
+        </header>
+        <img src="images/bg.jpg" class="bg">
+        <img src="images/bird.png" class="bird">
+        <div class="content">
+            <h2>We can save the <br><span>Earth</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium perspiciatis maiores ad quos saepe, voluptas nulla accusantium corporis. Aliquid, beatae ullam. Beatae non facere maxime illo, rerum ipsa voluptas eos quas nisi a commodi quidem ipsum minima nostrum atque error incidunt, nesciunt recusandae numquam totam aspernatur. Facilis ex temporibus hic!</p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, numquam! Enim officia architecto iste corporis.</p>
+            </div>
+            <div class="block">
+                <h3>How to save Water</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, numquam! Enim officia architecto iste corporis.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector(".bird");
+            const content = document.querySelector(".content");
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            bird.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+        })
+    </script>
+</body>
+</html>
